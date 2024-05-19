@@ -47,7 +47,10 @@ export default function Room({
   }
   return (
     <>
-      <p suppressHydrationWarning={true}>You are {params.playerId}</p>
+      <p suppressHydrationWarning={true}>
+        You are {params.playerId}. Send a message to start, and try to get the
+        AI to let you in instead of the other player(s)!
+      </p>
       <div className="bg-slate-100 text-black w-screen h-screen overflow-scroll">
         <div>
           {messages.map((msg, index) => (
