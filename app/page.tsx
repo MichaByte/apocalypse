@@ -23,7 +23,9 @@ export default function Home() {
 
   return (
     <div className="grid h-screen place-items-center">
-      <a href={codeURL} className="text-blue-500 underline">{codeURL}</a>
+      <a href={codeURL} target="_blank" className="text-blue-500 underline">
+        {codeURL}
+      </a>
       <div>
         {currentDomain && (
           <div className="rounded-xl w-min h-min block overflow-hidden">
